@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useState }  from "react";
 
 import fan from "../assets/spin-fan.png";
 import Group from "../assets/Group.png";
@@ -8,6 +8,8 @@ import electrifyasia from "../assets/ast/electrifyasia.png";
 import ScrollReveal, { anim } from "../container/ScrollReveal";
 
 export default function Portfolio() {
+
+  const [StakeCards, setStakeCards] = useState(false);
   return (
     <section className="mt-24 overflow-x-clip" id="portfolio">
       <div className="container-xxl relative">
@@ -78,11 +80,71 @@ export default function Portfolio() {
                 </div>
               </ScrollReveal>
             </div>
-            <ScrollReveal config={anim.animate11}>
+
+            {  StakeCards ?   
+            <div className="row no-gutters">
+              <ScrollReveal config={anim.animate8}>
+                <div className="col w-full md:w-4/12 py-1 md:p-1">
+                  <div className="card w-full h-full card-body text-center rounded-lg border-blue-100 hover:border-blue-300 hover:shadow-lg transition-colors hover:shadow-lg transition-colors border-2">
+                    <div className="h-[100px] text-center flex items-center justify-center">
+                      <img alt="..." src={bounty} />
+                    </div>
+
+                    <h5 className="text-xl mt-4 mb-3 font-medium text-primary">Bounty Ox</h5>
+                    <p className="card-text text-xs">
+                      Qube partners with promising blockchain projects, assisting them towards
+                      successful ICOs, through funding, advisory services and community awareness
+                      generation.
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+              <ScrollReveal config={anim.animate8}>
+                <div className="col w-full md:w-4/12 py-1 md:p-1">
+                  <div className="card w-full h-full card-body text-center rounded-lg border-blue-100 hover:border-blue-300 hover:shadow-lg transition-colors transition-colors border-2">
+                    <div className="h-[100px] text-center flex items-center justify-center">
+                      <img alt="..." src={bunty} />
+                    </div>
+
+                    <h5 className="text-xl mt-4 mb-3 font-medium text-primary">Wabi</h5>
+                    <p className="card-text text-xs">
+                      Qube partners with promising blockchain projects, assisting them towards
+                      successful ICOs, through funding, advisory services and community awareness
+                      generation.
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+              <ScrollReveal config={anim.animate8}>
+                <div className="col w-full md:w-4/12 py-1 md:p-1">
+                  <div className="card w-full h-full card-body text-center rounded-lg border-blue-100 hover:border-blue-300 hover:shadow-lg transition-colors transition-colors border-2">
+                    <div className="h-[100px] text-center flex items-center justify-center">
+                      <img alt="..." src={electrifyasia} />
+                    </div>
+
+                    <h5 className="text-xl mt-4 mb-3 font-medium text-primary">Electrify Asia</h5>
+                    <p className="card-text text-xs">
+                      Qube partners with promising blockchain projects, assisting them towards
+                      successful ICOs, through funding,
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            </div> 
+
+            : "" }
+
+            
+            
+               { StakeCards ?
+                "" :
+                <ScrollReveal config={anim.animate11}>
               <div className="mt-4 text-center">
-                <div className="btn is-primary is-expanded">View More</div>
-              </div>
-            </ScrollReveal>
+              <div className="btn is-primary is-expanded"  onClick={() => setStakeCards(true)}>View More</div>
+               </div> 
+               </ScrollReveal>
+              }
+            
           </div>
         </div>
       </div>

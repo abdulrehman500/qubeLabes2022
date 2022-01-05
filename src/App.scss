@@ -49,6 +49,10 @@ body {
   }
 }
 
+.custom-left {
+margin-left: -20rem;
+}
+
 @keyframes upanddown {
   from {
     transform: translate(50%, 25%);
@@ -89,7 +93,14 @@ body {
     transform: translate(152.873px, 237.192px);
   }
 }
-
+.mt-24-custom {
+  margin-top: 6rem !important;
+}
 .animate-spin.spin-fan {
   animation-duration: 60s !important;
+}
+@media (max-width: 1080px)  {
+  .mt-24-custom {
+    margin-top: 2rem !important;
+  }
 }

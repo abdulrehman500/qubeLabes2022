@@ -1,6 +1,6 @@
 import React from "react";
 
-import herovid from "../assets/herovid.gif";
+import herovid from "../assets/herovide.gif";
 import Particles from "react-tsparticles";
 import { anim, ScrollReveal } from "../container/ScrollReveal";
 
@@ -46,7 +46,7 @@ const particle = {
       random: true,
       anim: {
         enable: false,
-        speed: 40,
+        speed: 2,
         size_min: 0.1,
         sync: false,
       },
@@ -60,7 +60,7 @@ const particle = {
     },
     move: {
       enable: true,
-      speed: 4,
+      speed: 1,
       direction: "none",
       random: false,
       straight: false,
