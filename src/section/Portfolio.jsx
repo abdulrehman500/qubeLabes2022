@@ -83,7 +83,7 @@ export default function Portfolio() {
 
             {  StakeCards ?   
             <div className="row no-gutters">
-              <ScrollReveal config={anim.animate8}>
+              
                 <div className="col w-full md:w-4/12 py-1 md:p-1">
                   <div className="card w-full h-full card-body text-center rounded-lg border-blue-100 hover:border-blue-300 hover:shadow-lg transition-colors hover:shadow-lg transition-colors border-2">
                     <div className="h-[100px] text-center flex items-center justify-center">
@@ -98,8 +98,8 @@ export default function Portfolio() {
                     </p>
                   </div>
                 </div>
-              </ScrollReveal>
-              <ScrollReveal config={anim.animate8}>
+      
+              
                 <div className="col w-full md:w-4/12 py-1 md:p-1">
                   <div className="card w-full h-full card-body text-center rounded-lg border-blue-100 hover:border-blue-300 hover:shadow-lg transition-colors transition-colors border-2">
                     <div className="h-[100px] text-center flex items-center justify-center">
@@ -114,8 +114,8 @@ export default function Portfolio() {
                     </p>
                   </div>
                 </div>
-              </ScrollReveal>
-              <ScrollReveal config={anim.animate8}>
+
+
                 <div className="col w-full md:w-4/12 py-1 md:p-1">
                   <div className="card w-full h-full card-body text-center rounded-lg border-blue-100 hover:border-blue-300 hover:shadow-lg transition-colors transition-colors border-2">
                     <div className="h-[100px] text-center flex items-center justify-center">
@@ -129,7 +129,6 @@ export default function Portfolio() {
                     </p>
                   </div>
                 </div>
-              </ScrollReveal>
             </div> 
 
             : "" }

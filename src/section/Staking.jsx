@@ -186,7 +186,7 @@ export default function Staking() {
               {/* ------------------------------------------View-More---- */}
               { ViewCards ? 
       ( <>
-       <ScrollReveal  >
+
         <div className="col w-full sm:w-6/12 md:w-3/12 py-1 sm:p-1">
           <div className="card w-full h-full card-body text-center rounded-lg p-3 bg-[#F8FAFD] border-blue-100 hover:border-blue-300 hover:shadow-lg transition-colors transition-colors border-2">
             <div className="row no-gutters justify-center">
@@ -202,9 +202,9 @@ export default function Staking() {
             <button className="btn is-primary w-full mt-2">Stake</button>
           </div>
         </div>
-      </ScrollReveal>
+  
 
-      <ScrollReveal >
+      
         <div className="col w-full sm:w-6/12 md:w-3/12 py-1 sm:p-1">
           <div className="card w-full h-full card-body text-center rounded-lg p-3 bg-[#F8FAFD] border-blue-100 hover:border-blue-300 hover:shadow-lg transition-colors transition-colors border-2">
             <div className="row no-gutters justify-center">
@@ -220,9 +220,9 @@ export default function Staking() {
             <button className="btn is-primary w-full mt-2">Stake</button>
           </div>
         </div>
-      </ScrollReveal>
+    
 
-      <ScrollReveal >
+
         <div className="col w-full sm:w-6/12 md:w-3/12 py-1 sm:p-1">
           <div className="card w-full h-full card-body text-center rounded-lg p-3 bg-[#F8FAFD] border-blue-100 hover:border-blue-300 hover:shadow-lg transition-colors transition-colors border-2">
             <div className="row no-gutters justify-center">
@@ -238,9 +238,9 @@ export default function Staking() {
             <button className="btn is-primary w-full mt-2">Stake</button>
           </div>
         </div>
-      </ScrollReveal>
+     
 
-      <ScrollReveal >
+     
         <div className="col w-full sm:w-6/12 md:w-3/12 py-1 sm:p-1">
           <div className="card w-full h-full card-body text-center rounded-lg p-3 bg-[#F8FAFD] border-blue-100 hover:border-blue-300 hover:shadow-lg transition-colors transition-colors border-2">
             <div className="row no-gutters justify-center">
@@ -256,7 +256,7 @@ export default function Staking() {
             <button className="btn is-primary w-full mt-2">Stake</button>
           </div>
         </div>
-      </ScrollReveal>
+
       </>
       )
               : ""}

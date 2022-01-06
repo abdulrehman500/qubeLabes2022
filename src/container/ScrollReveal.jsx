@@ -4,10 +4,10 @@ import scrollReveal from "scrollreveal";
 const baseConfig = {
   distance: "70px",
   delay: 0,
-  easing: "cubic-bezier(0.68, -0.55, 0.25, 01.55)",
+  easing: "cubic-bezier(0.0, 0.0, 1.0, 1.0)",
 };
 
-var scrollRevealRight1 = { duration: 800, origin: "right" };
+var scrollRevealRight1 = { duration: 1800, origin: "right" };
 var scrollRevealRight2 = { duration: 1000, origin: "right" };
 var scrollRevealRight3 = { duration: 1200, origin: "right" };
 var scrollRevealRight4 = { duration: 1400, origin: "right" };

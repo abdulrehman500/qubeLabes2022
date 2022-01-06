@@ -1,6 +1,6 @@
 import React from "react";
 
-import herovid from "../assets/herovide.gif";
+import herovid from "../assets/QL-web-v7_opt.gif";
 import Particles from "react-tsparticles";
 import { anim, ScrollReveal } from "../container/ScrollReveal";
 
